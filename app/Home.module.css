@@ -1,0 +1,69 @@
+/* Home.module.css */
+
+.scrollContainer {
+    display: flex;
+    overflow-x: auto;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 20px;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  }
+
+  .imageContainer {
+    position: relative;
+    margin-right: 40px; /* Space between images */
+    flex: 0 0 auto; /* Prevents the image container from shrinking */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .image {
+    border-radius: 15px; /* Adjust as needed for rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+  }
+  
+  .imageContainer:hover {
+    transform: scale(1.05); /* Scale up the image on hover */
+  }
+  
+  .caption {
+    position: absolute;
+    top: 50%; 
+    left: 50%;  
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+  .descriptor {
+    position: absolute;
+    top: 60%; 
+    left: 50%;  
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    padding: 2px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 12px;
+    width: 500px;
+  }
+
+
+  .date {
+    position: absolute;
+    top: 5%; 
+    left: 10%;  
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    padding: 2px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .content {
+    padding-top: 600px; 
+  }

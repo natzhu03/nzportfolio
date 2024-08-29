@@ -1,0 +1,79 @@
+/* ProjectPage.module.css */
+.pageContainer {
+    padding: 20px;
+    padding-top: 70px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+  }
+
+  .h1 {
+    color: #333;
+    font-size: 34px;
+    margin-bottom: 16px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 13px;
+    margin-bottom: 24px;
+  }
+
+  .gridTitle {
+    font-size: 1.5em;
+    margin-top: 26px;
+    color: #454caa;
+  }
+
+  .gridContent {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    white-space: pre-line;
+  }
+
+  .heading {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .sectionTitle {
+    font-size: 1.5em;
+    margin-top: 26px;
+    color: #000000;
+  }
+  
+  .sectionContent {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    white-space: pre-line;
+    line-height: 1.8;  
+  }
+ 
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    padding: 20px; /* Add padding around the image */
+    margin-bottom: 20px;
+  }
+  
+  .image {
+    border-radius: 15px; /* Adjust as needed for rounded corners */
+    max-width: 100%; /* Ensures the image scales down within its container */
+    height: auto; /* Maintains aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+  }
+
+  .bulletList {
+    margin: 10px 0 20px 20px; /* Adjusts margins around the list */
+    padding: 0;
+    list-style-type: disc; /* Default bullet style */
+  }
+  
+  .bulletItem {
+    margin-bottom: 10px; /* Space between bullet points */
+    color: #333; /* Text color */
+    font-size: 16px; /* Adjust font size */
+    line-height: 1.5; /* Adjust line height for readability */
+  }

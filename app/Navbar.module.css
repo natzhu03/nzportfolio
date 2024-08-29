@@ -1,0 +1,48 @@
+/* components/Navbar.module.css */
+.navbar {
+    position: fixed; 
+    top: 0;           /* Aligns it to the top of the page */
+    left: 0;          /* Aligns it to the left edge of the page */
+    width: 100%;      /* Ensures the navbar spans the full width of the page */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #ffffff; /* Navbar background color */
+    color: white; /* Text color */
+    
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px; /* Adjust font size for the logo text */
+    font-weight: bold; /* Optional: Make the logo text bold */
+    color: rgb(0, 0, 0); /* Text color of the logo */
+    text-decoration: none; /* Remove underline from the link */
+  }
+  
+  .navLinks {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navLinks li {
+    margin-left: 20px;
+  }
+  
+  .navLinks a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .navLinks a:hover {
+    text-decoration: underline;
+  }
+  
