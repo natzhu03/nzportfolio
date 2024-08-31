@@ -1,11 +1,14 @@
-/* ProjectPage.module.css */
+
+
+/* Constrained content container */
 .pageContainer {
-    padding: 20px;
-    padding-top: 70px;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #333;
-  }
+  padding: 20px;
+  padding-top: 70px;
+  max-width: 800px;
+  margin: 0 auto; /* Remove default margins */
+  color: #333;
+  background-color: #fff; /* Background color for the content area */
+}
 
   .h1 {
     color: #333;
@@ -41,6 +44,11 @@
   .sectionTitle {
     font-size: 1.5em;
     margin-top: 26px;
+    color: #000000;
+  }
+
+  .section2Title {
+    font-size: 1.2em;
     color: #000000;
   }
   

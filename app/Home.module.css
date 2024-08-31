@@ -1,4 +1,12 @@
 /* Home.module.css */
+.fullWidthBackground {
+  background-color: #ffffff; /* Background color for the entire page */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+  width: 100vw; /* Ensure full viewport width */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
 
 .scrollContainer {
     display: flex;
