@@ -9,7 +9,7 @@ export default function Home() {
       
       <div style={{ padding: '80px'}} >
       <p>
-        <span style={{ fontSize: '30px', marginLeft: '70px'  }}> 👋 Hi there, Im</span> <span style={{ fontSize: '40px' }}>Natalie Zhu</span>.
+        <span style={{ fontSize: '30px', marginLeft: '70px'  }}> 👋 Hi there, I'm</span> <span style={{ fontSize: '40px' }}>Natalie Zhu</span>.
       </p>
 
       <p style={{ fontSize: '20px', marginLeft: '260px' }}>a software developer</p>
@@ -19,10 +19,10 @@ export default function Home() {
       </p>
       <p>
         <span style={{ fontSize: '23px' , marginLeft: '260px'}}>machine learning, </span> <span style={{ fontSize: '20px' }}>design, </span>
-        and <span style={{ fontSize: '20px' }}> computational biology, </span>
+        and <span style={{ fontSize: '20px' }}> computational biology. </span>
       </p>
 
-      <p > <span style={{ fontSize: '18px', marginLeft: '100px'}}> check out what Ive worked on</span> <span style={{ fontSize: '22px',}}> below: </span> </p>
+      <p > <span style={{ fontSize: '18px', marginLeft: '100px'}}> check out what I've worked on</span> <span style={{ fontSize: '22px',}}> below: </span> </p>
       </div>
 
       <h2 style= {{marginLeft: '30px'}}> work: </h2>
@@ -91,8 +91,64 @@ export default function Home() {
         </div>
       </div>
 
-      <h2 style= {{marginLeft: '20px'}}> other stuff </h2>
+      <p style={{ textAlign: 'right', fontStyle: 'italic', fontSize: '14px', color: '#555', marginTop: '10px', marginRight: '100px' }}>
+        ^designs by me!
+      </p> 
+      <h2 style= {{marginLeft: '20px'}}> more fun! </h2>
 
+
+      <div className={styles.scrollContainer}>
+
+        <div className={styles.imageContainer}>
+          <Link href="/projects/microplasticdetection">
+            <Image 
+              src="/images/card.png"  
+              alt="Twenty Four"
+              width={550}  
+              height={300} 
+              className={styles.image}
+            />
+            <div className={styles.date}>In Progress</div>
+            <div className={styles.caption}>Twenty Four</div>
+            <div className={styles.descriptor2}>reimagining a traditional Chinese card game </div>
+            <div className={styles.descriptor}>PERSONAL PROJECT | IOS MOBILE APPLICATION | SWIFT </div>
+          </Link>
+        </div>
+
+        <div className={styles.imageContainer}>
+          <Link href="/projects/biometricapp">
+            <Image 
+              src="/images/horse.png"  
+              alt="Horse App"
+              width={550}  
+              height={300} 
+              className={styles.image}
+            />
+            <div className={styles.date}>Summer 2023</div>
+            <div className={styles.caption}>Horse Health Web App</div>
+            <div className={styles.descriptor2}> re-envisioning data entry + communication </div>
+            <div className={styles.descriptor}>UI UX DESIGN | DEVELOP FOR GOOD </div>
+
+          </Link>
+        </div>
+
+        <div className={styles.imageContainer}>
+          <Link href="/projects/evolution">
+            <Image 
+              src="/images/gather.png"  
+              alt="Gather"
+              width={550}  
+              height={300} 
+              className={styles.image}
+            />
+            <div className={styles.date}>January 2023</div>
+            <div className={styles.caption}>Gather</div>
+            <div className={styles.descriptor2}>A web app to reunite old friends</div>
+            <div className={styles.descriptor}>HACK@BROWN PROJECT | WEB APPLICATION | REACT/SQL/TWILIO </div>
+
+          </Link>
+        </div>
+      </div>
 
     </div>
     
