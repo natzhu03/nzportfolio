@@ -94,7 +94,7 @@ export default function Home() {
       <p style={{ textAlign: 'right', fontStyle: 'italic', fontSize: '14px', color: '#555', marginTop: '10px', marginRight: '100px' }}>
         ^designs by me!
       </p> 
-      <h2 style= {{marginLeft: '20px'}}> more fun! </h2>
+      <h2 style= {{marginLeft: '20px'}}> & more (personal projects + design work): </h2>
 
 
       <div className={styles.scrollContainer}>
