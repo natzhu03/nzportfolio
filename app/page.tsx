@@ -9,7 +9,7 @@ export default function Home() {
       
       <div style={{ padding: '80px'}} >
       <p>
-        <span style={{ fontSize: '30px', marginLeft: '70px'  }}> 👋 Hi there, I'm</span> <span style={{ fontSize: '40px' }}>Natalie Zhu</span>.
+        <span style={{ fontSize: '30px', marginLeft: '70px'  }}> 👋 Hi there, I&apos;m</span> <span style={{ fontSize: '40px' }}>Natalie Zhu</span>.
       </p>
 
       <p style={{ fontSize: '20px', marginLeft: '260px' }}>a software developer</p>
@@ -22,7 +22,7 @@ export default function Home() {
         and <span style={{ fontSize: '20px' }}> computational biology. </span>
       </p>
 
-      <p > <span style={{ fontSize: '18px', marginLeft: '100px'}}> check out what I've worked on</span> <span style={{ fontSize: '22px',}}> below: </span> </p>
+      <p > <span style={{ fontSize: '18px', marginLeft: '100px'}}> check out what I&apos;ve worked on</span> <span style={{ fontSize: '22px',}}> below: </span> </p>
       </div>
 
       <h2 style= {{marginLeft: '30px'}}> work: </h2>
