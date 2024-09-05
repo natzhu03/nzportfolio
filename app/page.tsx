@@ -60,6 +60,12 @@ export default function Home() {
         </div>
 
         <div className={styles.imageContainer}>
+        <a 
+        href="https://natzhu03.github.io/biometric.html" // Replace with your external URL
+        target="_blank" 
+        rel="noopener noreferrer"
+        className={styles.link}
+      >
           <Link href="/projects/biometricapp">
             <Image 
               src="/images/biometric.png"  
@@ -72,12 +78,16 @@ export default function Home() {
             <div className={styles.caption}>Biometric Android Application @AVHBAC</div>
             <div className={styles.descriptor}>RESEARCH PROJECT | ANDROID DEVELOPMENT | JAVA </div>
 
-          </Link>
+          </a>
         </div>
 
         <div className={styles.imageContainer}>
-          <Link href="/projects/evolution">
-            <Image 
+        <a 
+        href="https://natzhu03.github.io/alfaro.html" // Replace with your external URL
+        target="_blank" 
+        rel="noopener noreferrer"
+        className={styles.link}
+      >            <Image 
               src="/images/evolution.png"  
               alt="Evolution"
               width={550}  
@@ -88,7 +98,7 @@ export default function Home() {
             <div className={styles.caption}>Exploring Evolution through Computation @UCLA Alfaro Lab</div>
             <div className={styles.descriptor}>RESEARCH PROJECTS | COMPUTATIONAL BIOLOGY | R/C++/PYTHON </div>
 
-          </Link>
+          </a>
         </div>
       </div>
 
@@ -149,7 +159,12 @@ export default function Home() {
         </div>
 
         <div className={styles.imageContainer}>
-          <Link href="/ipgather">
+        <a 
+        href="https://natzhu03.github.io/gather.html" // Replace with your external URL
+        target="_blank" 
+        rel="noopener noreferrer"
+        className={styles.link}
+      >
             <Image 
               src="/images/gather.png"  
               alt="Gather"
@@ -162,7 +177,7 @@ export default function Home() {
             <div className={styles.descriptor2}>A web app to reunite old friends</div>
             <div className={styles.descriptor}>HACK@BROWN PROJECT | WEB APPLICATION | REACT/SQL/TWILIO </div>
 
-          </Link>
+          </a>
         </div>
       </div>
 
