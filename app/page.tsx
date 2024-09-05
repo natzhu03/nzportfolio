@@ -60,7 +60,7 @@ export default function Home() {
         </div>
 
         <div className={styles.imageContainer}>
-          <Link href="/projects/biometricapp">
+        <a href="https://natzhu03.github.io/biometric.html" style={{ color: 'blue', textDecoration: 'underline' }} target="_blank" rel="noopener noreferrer" >
             <Image 
               src="/images/biometric.png"  
               alt="Biometric App"
@@ -72,11 +72,11 @@ export default function Home() {
             <div className={styles.caption}>Biometric Android Application @AVHBAC</div>
             <div className={styles.descriptor}>RESEARCH PROJECT | ANDROID DEVELOPMENT | JAVA </div>
 
-          </Link>
+          </a>
         </div>
 
         <div className={styles.imageContainer}>
-          <Link href="/projects/evolution">
+        <a href="https://natzhu03.github.io/alfaro.html" style={{ color: 'blue', textDecoration: 'underline' }} target="_blank" rel="noopener noreferrer" >
             <Image 
               src="/images/evolution.png"  
               alt="Evolution"
@@ -87,8 +87,7 @@ export default function Home() {
             <div className={styles.date}>2021-2022</div>
             <div className={styles.caption}>Exploring Evolution through Computation @UCLA Alfaro Lab</div>
             <div className={styles.descriptor}>RESEARCH PROJECTS | COMPUTATIONAL BIOLOGY | R/C++/PYTHON </div>
-
-          </Link>
+          </a>
         </div>
       </div>
 
@@ -150,7 +149,7 @@ export default function Home() {
 
         <div className={styles.imageContainer}>
 
-        <a href="https://natzhu03.github.io/biometric.html" style={{ color: 'blue', textDecoration: 'underline' }} target="_blank" rel="noopener noreferrer" >
+        <a href="https://natzhu03.github.io/gather.html" style={{ color: 'blue', textDecoration: 'underline' }} target="_blank" rel="noopener noreferrer" >
         <Image 
               src="/images/gather.png"  
               alt="Gather"
