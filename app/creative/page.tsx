@@ -46,7 +46,7 @@ export default function Creative() {
         </div>
 
         <h1 className={styles.h1}>MISC</h1>
-        <p><em>I'm also passionate about graphic design and media work - some of my experiences include: </em></p>
+        <p><em>I&apos;m also passionate about graphic design and media work - some of my experiences include: </em></p>
         <p><b>Social media/graphic design work for Brown&apos;s TRUE (Transfer and Resumed Undergraduate Education) program</b></p>
         <p>As the TRUE Communications Advisor, I was in charge of all pre-matriculation promotional/preparational material and communication for incoming Brown transfer students. Check out some of my design work below:</p>
         <br />
@@ -57,8 +57,8 @@ export default function Creative() {
             <Image 
               src={`/images/true.png`} 
               alt="Image" 
-              width={650} 
-              height={400}
+              width={850} 
+              height={600}
               className={styles.image} 
             />
             <div className={styles.caption}>My design for the TRUE orientation handbook & merchandise!</div>
@@ -68,8 +68,8 @@ export default function Creative() {
             <Image 
               src={`/images/true2.png`} 
               alt="Image" 
-              width={480} 
-              height={400}
+              width={680} 
+              height={600}
               className={styles.image} 
             />
             <div className={styles.caption}>My social media work - drawing + posting TRUE student advisors</div>
@@ -79,8 +79,8 @@ export default function Creative() {
             <Image 
               src={`/images/true3.png`} 
               alt="Image" 
-              width={500} 
-              height={400}
+              width={700} 
+              height={600}
               className={styles.image} 
             />
             <div className={styles.caption}>Some more promotional content for the TRUE Instagram page</div>
