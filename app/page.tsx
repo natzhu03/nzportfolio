@@ -4,6 +4,7 @@ import styles from './Home.module.css';
 
 export default function Home() {
   return (
+    <div className={styles.fullWidthBackground}>
     <div style={{ backgroundColor: '#FFFFFF', minHeight: '100vh', padding: '20px' }}>
       
       
@@ -59,12 +60,6 @@ export default function Home() {
         </div>
 
         <div className={styles.imageContainer}>
-        <a 
-        href="https://natzhu03.github.io/biometric.html" // Replace with your external URL
-        target="_blank" 
-        rel="noopener noreferrer"
-        className={styles.link}
-      >
           <Link href="/projects/biometricapp">
             <Image 
               src="/images/biometric.png"  
@@ -77,16 +72,12 @@ export default function Home() {
             <div className={styles.caption}>Biometric Android Application @AVHBAC</div>
             <div className={styles.descriptor}>RESEARCH PROJECT | ANDROID DEVELOPMENT | JAVA </div>
 
-          </a>
+          </Link>
         </div>
 
         <div className={styles.imageContainer}>
-        <a 
-        href="https://natzhu03.github.io/alfaro.html" // Replace with your external URL
-        target="_blank" 
-        rel="noopener noreferrer"
-        className={styles.link}
-      >            <Image 
+          <Link href="/projects/evolution">
+            <Image 
               src="/images/evolution.png"  
               alt="Evolution"
               width={550}  
@@ -97,7 +88,7 @@ export default function Home() {
             <div className={styles.caption}>Exploring Evolution through Computation @UCLA Alfaro Lab</div>
             <div className={styles.descriptor}>RESEARCH PROJECTS | COMPUTATIONAL BIOLOGY | R/C++/PYTHON </div>
 
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -158,12 +149,7 @@ export default function Home() {
         </div>
 
         <div className={styles.imageContainer}>
-        <a 
-        href="https://natzhu03.github.io/gather.html" // Replace with your external URL
-        target="_blank" 
-        rel="noopener noreferrer"
-        className={styles.link}
-      >
+          <Link href="/projects/horse">
             <Image 
               src="/images/gather.png"  
               alt="Gather"
@@ -176,14 +162,15 @@ export default function Home() {
             <div className={styles.descriptor2}>A web app to reunite old friends</div>
             <div className={styles.descriptor}>HACK@BROWN PROJECT | WEB APPLICATION | REACT/SQL/TWILIO </div>
 
-          </a>
+          </Link>
         </div>
       </div>
 
-    </div>    
+    </div>
+    </div>
+    
   );
 
 
 }
-
 
