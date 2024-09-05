@@ -1,5 +1,5 @@
 import ProjectLayout from './layout';
-import styles from '../Home.module.css'; // Import your CSS module
+import styles from './Creative.module.css'; // Import your CSS module
 import Image from 'next/image';
 import Link from 'next/link';
 
