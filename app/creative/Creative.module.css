@@ -59,6 +59,16 @@
     white-space: pre-line;
     line-height: 1.8;  
   }
+
+  .caption {
+    position: absolute;
+    top: 100%; 
+    left: 50%;  
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
  
   .imageRow {
     display: flex;

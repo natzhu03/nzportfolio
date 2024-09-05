@@ -47,7 +47,9 @@ export default function Creative() {
 
         <h1 className={styles.h1}>MISC</h1>
         <p><em>I&apos;m also passionate about graphic design and media work - some of my experiences include: </em></p>
-        <p><b>Social media/graphic design work for Brown&apos;s TRUE (Transfer and Resumed Undergraduate Education) program</b></p>
+        <br />
+
+        <h1 className = {styles.heading}>Social media/graphic design work for Brown&apos;s TRUE (Transfer and Resumed Undergraduate Education) program</h1>
         <p>As the TRUE Communications Advisor, I was in charge of all pre-matriculation promotional/preparational material and communication for incoming Brown transfer students. Check out some of my design work below:</p>
         <br />
 
@@ -91,9 +93,11 @@ export default function Creative() {
     <br />
 
 
-    <p><b>Official student blogger website for Fall 2023 study abroad progra</b></p>
+    <h1 className = {styles.heading}>Official student blogger website for Fall 2023 study abroad progra</h1>
 
     <p>For my study abroad program in Copenhagen, Denmark, I was selected as a blogging ambassador for the program, so I got to design my own blog to share my abroad experience and post weekly!</p>
+
+    <a href="https://natspassport1.wordpress.com/" style={{ color: 'blue', textDecoration: 'underline' }} target="_blank" rel="noopener noreferrer" >Check out my blog site here!</a>
 
     <Image 
         src={`/images/blog.png`} 
@@ -103,8 +107,7 @@ export default function Creative() {
         className={styles.image} 
       />
 
-    <a href="https://natspassport1.wordpress.com/" style={{ color: 'blue', textDecoration: 'underline' }} target="_blank" rel="noopener noreferrer" >Check out my blog site here!</a>
-
+    <br />
 
       </div>
     </ProjectLayout>
