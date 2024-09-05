@@ -1,5 +1,6 @@
 import ProjectLayout from './layout';
 import styles from './Creative.module.css'; // Import your CSS module
+import homeStyles from '../Home/Home.module.css'; // Import your CSS module
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -7,36 +8,37 @@ export default function Creative() {
   return (
     <ProjectLayout>
       <div className={styles.pageContainer}>
-        <div className={styles.scrollContainer}>
-          <div className={styles.imageContainer}>
+        <h3>Creative</h3>
+        <div className={homeStyles.scrollContainer}>
+          <div className={homeStyles.imageContainer}>
             <Link href="/projects/furniture">
               <Image 
                 src="/images/furniture.png"  
                 alt="Social Furniture"
                 width={550}  
                 height={300} 
-                className={styles.image}
+                className={homeStyles.image}
               />
-              <div className={styles.date}>Spring 2024</div>
-              <div className={styles.caption}>Social Furniture at Brown</div>
-              <div className={styles.descriptor2}>Creating interactions between strangers</div>
-              <div className={styles.descriptor}>FURNITURE DESIGN | 3D MODELING | DESIGN ENGINEERING</div>
+              <div className={homeStyles.date}>Spring 2024</div>
+              <div className={homeStyles.caption}>Social Furniture at Brown</div>
+              <div className={homeStyles.descriptor2}>Creating interactions between strangers</div>
+              <div className={homeStyles.descriptor}>FURNITURE DESIGN | 3D MODELING | DESIGN ENGINEERING</div>
             </Link>
           </div>
 
-          <div className={styles.imageContainer}>
+          <div className={homeStyles.imageContainer}>
             <Link href="/projects/horse">
               <Image 
                 src="/images/horse.png"  
                 alt="Horse App"
                 width={550}  
                 height={300} 
-                className={styles.image}
+                className={homeStyles.image}
               />
-              <div className={styles.date}>Summer 2023</div>
-              <div className={styles.caption}>Horse Health Web App</div>
-              <div className={styles.descriptor2}>Re-envisioning data entry + communication</div>
-              <div className={styles.descriptor}>UI UX DESIGN | DEVELOP FOR GOOD</div>
+              <div className={homeStyles.date}>Summer 2023</div>
+              <div className={homeStyles.caption}>Horse Health Web App</div>
+              <div className={homeStyles.descriptor2}>Re-envisioning data entry + communication</div>
+              <div className={homeStyles.descriptor}>UI UX DESIGN | DEVELOP FOR GOOD</div>
             </Link>
           </div>
         </div>
