@@ -4,7 +4,6 @@ import styles from './Home.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.fullWidthBackground}>
     <div style={{ backgroundColor: '#FFFFFF', minHeight: '100vh', padding: '20px' }}>
       
       
@@ -181,9 +180,7 @@ export default function Home() {
         </div>
       </div>
 
-    </div>
-    </div>
-    
+    </div>    
   );
 
 
