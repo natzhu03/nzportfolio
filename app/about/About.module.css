@@ -61,11 +61,13 @@
   }
 
   .caption {
-    display: block;
+    position: absolute;
+    top: 100%; 
+    left: 50%;  
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
     padding: 5px;
     color: rgb(0, 0, 0);
     text-align: center;
-    margin-top: 10px; /* Add spacing between image and caption */
   }
  
   .imageRow {

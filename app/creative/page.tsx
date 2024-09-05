@@ -93,9 +93,9 @@ export default function Creative() {
     <br />
 
 
-    <h1 className = {styles.heading}>Official student blogger website for Fall 2023 study abroad progra</h1>
+    <h1 className = {styles.heading}>Official student blogger website for Fall 2023 study abroad program.</h1>
 
-    <p>For my study abroad program in Copenhagen, Denmark, I was selected as a blogging ambassador for the program, so I got to design my own blog to share my abroad experience and post weekly!</p>
+    <p>For my study abroad program in Copenhagen, Denmark, I was selected as a blogging ambassador for the program, so I got to design my own blog to share my abroad experience and post weekly</p>
 
     <a href="https://natspassport1.wordpress.com/" style={{ color: 'blue', textDecoration: 'underline' }} target="_blank" rel="noopener noreferrer" >Check out my blog site here!</a>
 
