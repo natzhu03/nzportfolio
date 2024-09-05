@@ -1,7 +1,7 @@
 // ProjectLayout.tsx
 import React from 'react';
 import { Inter } from "next/font/google";
-import styles from '../../Home.module.css'; // Import your CSS module
+import styles from './../Home.module.css'; // Import your CSS module
 
 const inter = Inter({ subsets: ["latin"] });
 

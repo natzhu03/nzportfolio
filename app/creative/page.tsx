@@ -48,7 +48,8 @@ export default function Creative() {
         <h1 className={styles.h1}>MISC</h1>
         <p><em>I'm also passionate about graphic design and media work - some of my experiences include: </em></p>
         <p><b>Social media/graphic design work for Brown&apos;s TRUE (Transfer and Resumed Undergraduate Education) program</b></p>
-        <p>As the TRUE Communications Advisor, I was in charge of all pre-matriculation promotional/preparational material and communication for incoming Brown transfer students.</p>
+        <p>As the TRUE Communications Advisor, I was in charge of all pre-matriculation promotional/preparational material and communication for incoming Brown transfer students. Check out some of my design work below:</p>
+        <br />
 
         <div className={styles.imageRow}>
 
@@ -87,6 +88,9 @@ export default function Creative() {
             
 </div>
 
+    <br />
+
+
     <p><b>Official student blogger website for Fall 2023 study abroad progra</b></p>
 
     <p>For my study abroad program in Copenhagen, Denmark, I was selected as a blogging ambassador for the program, so I got to design my own blog to share my abroad experience and post weekly!</p>
@@ -94,8 +98,8 @@ export default function Creative() {
     <Image 
         src={`/images/blog.png`} 
         alt="Image" 
-        width={800} 
-        height={500} 
+        width={1000} 
+        height={700} 
         className={styles.image} 
       />
 

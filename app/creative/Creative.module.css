@@ -71,7 +71,6 @@
     position: relative;
     margin-right: 50px; /* Space between images */
     flex: 0 0 auto; /* Prevents the image container from shrinking */
-    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
   }
