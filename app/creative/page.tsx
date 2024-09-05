@@ -43,6 +43,44 @@ export default function Creative() {
 
         <p><em>Some of my other experiences include:</em></p>
         <p>Social media/graphic design work for Brown&apos;s TRUE (Transfer and Resumed Undergraduate Education) program</p>
+        <div className={styles.imageContainer}>
+  <Image 
+    src={`/images/true.png`} 
+    alt="Image" 
+    width={600} 
+    height={400}
+    className={styles.image} 
+  />
+  <Image 
+    src={`/images/true2.png`} 
+    alt="Image" 
+    width={450} 
+    height={400}
+    className={styles.image} 
+  />
+  <Image 
+    src={`/images/true3.png`} 
+    alt="Image" 
+    width={500} 
+    height={400}
+    className={styles.image} 
+  />
+</div>
+
+    <p>Official blog website for Fall 2023 study abroad program</p>
+
+    <Image 
+        src={`/images/blog.png`} 
+        alt="Image" 
+        width={800} 
+        height={500} 
+        className={styles.image} 
+      />
+
+    <a href=" https://natspassport1.wordpress.com/" target="_blank" rel="noopener noreferrer">
+    Blog link here
+    </a>
+
       </div>
     </ProjectLayout>
   );
