@@ -4,6 +4,7 @@ import styles from './Home.module.css';
 
 export default function Home() {
   return (
+    <div className={styles.fullWidthBackground}>
     <div style={{ backgroundColor: '#FFFFFF', minHeight: '100vh', padding: '20px' }}>
       
       
@@ -15,10 +16,10 @@ export default function Home() {
       <p style={{ fontSize: '20px', marginLeft: '260px' }}>a software developer</p>
 
       <p>
-        <span style={{ fontSize: '17px', marginLeft: '260px'  }}>with a background in</span> <span style={{ fontSize: '27px' }}>mobile application development, </span>
+        <span style={{ fontSize: '17px', marginLeft: '260px'  }}>with a background in</span> <span style={{ fontSize: '26px' }}>mobile application development, </span>
       </p>
       <p>
-        <span style={{ fontSize: '23px' , marginLeft: '260px'}}>machine learning, </span> <span style={{ fontSize: '20px' }}>design, </span>
+        <span style={{ fontSize: '23px' , marginLeft: '260px'}}>design, </span> <span style={{ fontSize: '20px' }}>machine learning, </span>
         and <span style={{ fontSize: '20px' }}> computational biology. </span>
       </p>
 
@@ -39,7 +40,7 @@ export default function Home() {
             />
             <div className={styles.date}>Summer 2024</div>
             <div className={styles.caption}>iOS Development @Capital One</div>
-            <div className={styles.descriptor}>INTERNSHIP | MOBILE DEVELOPMENT | SWIFT </div>
+            <div className={styles.descriptor}>INTERNSHIP | FRONT-END DEVELOPMENT | iOS MOBILE </div>
           </Link>
         </div>
 
@@ -99,6 +100,40 @@ export default function Home() {
 
       <div className={styles.scrollContainer}>
 
+      <div className={styles.imageContainer}>
+          <Link href="/projects/furniture">
+            <Image 
+              src="/images/furniture.png"  
+              alt="Social Furniture"
+              width={550}  
+              height={300} 
+              className={styles.image}
+            />
+            <div className={styles.date}>Spring 2024</div>
+            <div className={styles.caption}>Social Furniture at Brown</div>
+            <div className={styles.descriptor2}>creating interactions between strangers </div>
+            <div className={styles.descriptor}>FURNITURE DESIGN | 3D MODELING | DESIGN ENGINEERING </div>
+          </Link>
+        </div>
+
+        <div className={styles.imageContainer}>
+          <Link href="/projects/horse">
+            <Image 
+              src="/images/horse.png"  
+              alt="Horse App"
+              width={550}  
+              height={300} 
+              className={styles.image}
+            />
+            <div className={styles.date}>Summer 2023</div>
+            <div className={styles.caption}>Horse Health Web App</div>
+            <div className={styles.descriptor2}> re-envisioning data entry + communication </div>
+            <div className={styles.descriptor}>UI UX DESIGN | DEVELOP FOR GOOD </div>
+
+          </Link>
+        </div>
+
+
         <div className={styles.imageContainer}>
           <Link href="/projects/microplasticdetection">
             <Image 
@@ -112,23 +147,6 @@ export default function Home() {
             <div className={styles.caption}>Twenty Four</div>
             <div className={styles.descriptor2}>reimagining a traditional Chinese card game </div>
             <div className={styles.descriptor}>PERSONAL PROJECT | IOS MOBILE APPLICATION | SWIFT </div>
-          </Link>
-        </div>
-
-        <div className={styles.imageContainer}>
-          <Link href="/projects/biometricapp">
-            <Image 
-              src="/images/horse.png"  
-              alt="Horse App"
-              width={550}  
-              height={300} 
-              className={styles.image}
-            />
-            <div className={styles.date}>Summer 2023</div>
-            <div className={styles.caption}>Horse Health Web App</div>
-            <div className={styles.descriptor2}> re-envisioning data entry + communication </div>
-            <div className={styles.descriptor}>UI UX DESIGN | DEVELOP FOR GOOD </div>
-
           </Link>
         </div>
 
@@ -150,6 +168,7 @@ export default function Home() {
         </div>
       </div>
 
+    </div>
     </div>
     
   );

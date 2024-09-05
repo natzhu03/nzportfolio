@@ -2,11 +2,12 @@ export type Project = {
     image?: string;
     title: string;
     subheading: string;
-    role: string;
-    duration: string;
+    role?: string;
+    org?: string;
+    duration?: string;
     team?: string[];
-    disciplines: string[];
-    technologies: string[];
+    disciplines?: string[];
+    technologies?: string[];
     introduction?: string;
     problem?: string;
     achievements?: string[];
@@ -30,27 +31,25 @@ export const projectData: ProjectData = {
       disciplines: ['iOS Mobile Application', 'Front-End Development', 'Design'],
       technologies: ['SwiftUI'],
       introduction: `
-As a technology development intern on Capital One&apos;s Associate Experience team, I worked on the enhancement and development of an internal iOS mobile application used by 10,000+ associates. By driving end-to-end Swift development, I significantly improved the app&apos;s user experience, expanded its functionality, and increased accessibility, ultimately boosting workplace productivity.
+As a technology development intern on Capital One's Associate Experience team, I worked on the enhancement and development of an internal iOS mobile application used by 10,000+ associates. By driving end-to-end Swift development, I significantly improved the app's user experience, expanded its functionality, and increased accessibility, ultimately boosting workplace productivity.
   
-  During my internship, I worked on two projects:
-  #1 Increasing app data accessibility through home screen widgets
-  #2 Integrating mini-application into super-application
+  During my internship, I worked on two initiatives:
   `,
   problem: `
-  Project #1: Modern Mini-App Integration
+  PROJECT #1: Modern Mini-App Integration
 
-    Capital One&apos;s podcasting application previously existed as a standalone web platform. To increase user accessibility and usage of this platform, I helped to implement a completely redesigned, reimagined version of this podcasting application as a mini-application within the main super-application (with 10,000+ users) using SwiftUI, allowing users to search, play, download 1000+ live posted podcasts. These super-app iOS developments will be deployed as part of the app&apos;s next version release. 
+    Capital One's podcasting application previously existed as a standalone web platform. To increase user accessibility and usage of this platform, I helped to implement a completely redesigned, reimagined version of this podcasting application as a mini-application within the main super-application (with 10,000+ users) using SwiftUI, allowing users to search, play, download 1000+ live posted podcasts. These super-app iOS developments will be deployed as part of the app's next version release. 
   
-  Project #2: Accessible & Convenient Data Access
+  PROJECT #2: Accessible & Convenient Data Access
 
-    In order to access urgent, time-sensitive data for Capital One&apos;s main expense & authorization approval request pipeline, users would have to click into the application, and then into a mini-app within the super-app. To remedy this multi-step process, I created a widget that users could easily add to their home screen allowing them to access live data from within the app. This widget also automatically updates in response to the users actions (e.g. approving/declining requests) within the app. 
+    In order to access urgent, time-sensitive data for Capital One's main expense & authorization approval request pipeline, users would have to click into the application, and then into a mini-app within the super-app. To remedy this multi-step process, I created a widget that users could easily add to their home screen allowing them to access live data from within the app. This widget also automatically updates in response to the users actions (e.g. approving/declining requests) within the app. 
 `,
 learnings: `
 SWIFT - A NEW PROGRAMMING LANGUAGE
 Going into iOS mobile development, I was completely new to Swift/SwiftUI. Many concepts were quite unfamiliar (I mean, what even is a ViewModel???), and I learned soon that many best practices and nuanced techniques were best gained through hands-on experience! Over the course of my internship, I became proficient in Swift-specific concepts including closures, protocols, extensions, and state management. More importantly, I learned how to modularize code into reusable components, efficiently manage data flow across views, and connect front-end and back-end in Swift.
  
 "GOOD" & COLLABORATIVE CODING
-What is “good” coding? This internship taught me that it&apos;s more than just basic object-oriented principles - I discovered how effective code can be described by two main principles: reusability and readability! Thoughtful naming conventions and organized file structures can go a long way, especially in a collaborative setting such as mine. Additionally, I learned that with good code, sometimes more is more - when it means enhancing clarity and intuitiveness. Finally, I found a lot of joy in the brainstorming and design thinking process in figuring out the best way to break the app into reusable components.
+What is “good” coding? This internship taught me that it's more than just basic object-oriented principles - I discovered how effective code can be described by two main principles: reusability and readability! Thoughtful naming conventions and organized file structures can go a long way, especially in a collaborative setting such as mine. Additionally, I learned that with good code, sometimes more is more - when it means enhancing clarity and intuitiveness. Finally, I found a lot of joy in the brainstorming and design thinking process in figuring out the best way to break the app into reusable components.
 
 THINKING ABOUT THE USER
 A large amount of my work was user facing - one initiative I worked on was implementing solutions for managing data storage - including user-generated content to create a personalized experience within the app. One significant challenge was the lengthy loading times, which negatively affected user experience, especially when data changes led to slow UI responses. 
@@ -68,9 +67,20 @@ During the final project presentation, I was pleased to see the positive reactio
       disciplines: ['Machine Learning', 'Computer Vision'],
       technologies: ['Python', 'YOLO (You Only Look Once) Object Detection models', 'Deep SORT Object Tracking algorithm', 'ML Libraries: PyTorch, SuperGradients', 'Intel RealSense Library'],
       introduction: 'Microplastics are a pressing threat to marine and freshwater environments. Given the current lack of technologies for rapidly identifying and quantifying microplastics in underwater environments, I worked with the Clarkson University AI Vision Lab (AVHBAC) to develop a real-time camera-based system capable of detecting and tracking underwater microplastics. \n\nAs one of ten undergraduate students selected for the Clarkson University NSF-funded research program, I took on a leading role on this project, guiding its progression and direction over the internship period of three months.',
-      problem: 'As the lead researcher on this project, I decided on the new direction of the project through my observations that 1. The current detection system failed to capture the distance from camera to microplastiic and 2. Smaller-sized microplastics were being detected at much lower rates.',
-      achievements: ['Trained and implemented novel deep learning model for microplastic detection, achieving 5x more accurate detections of small-sized microplastics.', 'Integrated software with three-dimensional camera system to derive depth data from images, resulting in a 37% improvement in microplastic size and velocity calculations.', 'Integrated new microplastic detection system with advanced object tracking algorithm DeepSORT to enable real-time multi-object microplastic tracking.'],
-      learnings: 'insert learnings'
+      problem: `
+      Previously, the AVHBAC developed a camera-based system that detected the presence and movement of microplastics through an underwater tank. Given the current system, I took notice of three pressing issues: 1. The current detection system failed to capture the distance from camera to microplastic - resulting in accurate microplastic velocity calculations - highlighting the need for a 3d camera based system that also takes into account depth information. Additionally: 2. Smaller-sized microplastics were being detected at significantly lower rates than their bigger counterparts. 3. While the current system could detect the presence of objects (microplastics), it did not track them - meaning that a single moving object was inaccurately counted as multiple moving objects through different frames.
+
+      Over the 10 weeks of my research internship, I led the project towards three corresponding new objectives: implementing the ability for the system to derive depth data from images and consequently enabling accurate velocity and speed calculations, and greatly increasing the accuracy of its detection of extremely small microplastics and consequently making the detection system much more accurate for a real-world environment, and finally implementing microplastic tracking to allow for accurate microplastic population counts.
+
+      By the end of the summer, I had successfully trained and implemented a novel deep learning model for microplastic detection, achieving 5x more accurate detections of small-sized microplastics. Furthermore, I integrated software with three-dimensional camera system to derive depth data from images, resulting in a 37% improvement in microplastic size and velocity calculations. Additionally, I integrated this new microplastic detection system with the advanced object tracking algorithm DeepSORT to enable real-time multi-object microplastic tracking. 
+ 
+      `,
+      learnings: `
+      - During this internship I learned to rely heavily on documentation, as my work was largely independent and involved me using many new tools I had never encountered before (YOLO, PyTorch etc.)
+      - Keeping track of errors is important in case encountering similar issues later on!!!
+      - Still, there are many ways left to improve this microplastic tracking system for the real world - taking into account complex background, water turbidity/impurities, irregular microplastic shape etc.
+
+      `
     },
     biometricapp: {
       image: 'biometric.png',
@@ -98,6 +108,25 @@ During the final project presentation, I was pleased to see the positive reactio
       duration: 'Jul 2021 - Jun 2022',
       disciplines: ['Evolutionary Biology'],
       technologies: ['Python', 'R', 'C++'],
+    },
+    furniture: {
+      image: 'furniture.png',
+      title: 'Imagining & Designing "Social Furniture" on the Brown University campus',
+      subheading: 'Nudging interactions between strangers through design and engineering',
+    },
+    horse: {
+      image: 'maryland.png',
+      title: 'Horse Stressors App Design',
+      subheading: 'Redesigning Maryland Therapeutic Riding\'s horse health data tracking system and operations',
+      introduction: 'Previously, Maryland Therapeutic Riding (MTR) was inefficiently inputting data on their horse’s stress levels. We tackled this problem by designing a web application to streamline data input and tracking, and improve staff operations.',
+      role: "Subteam Lead Designer",
+      duration: 'May 2023-Aug 2023',
+      technologies: ['Figma', 'Figjam'], 
+      org: 'Develop for Good',
+      problem: `
+      As one of two subteam Design leads, I led the transformation of Maryland Therapeutic Riding’s horse health data tracking system and operations through the design of a new web-based SaaS product, increasing staff accessibility and operational efficiency.
+      I also directed essential stages of the design process to redesign client data and spreadsheets as a sophisticated, responsive website, including the storyboarding, wireframing, A/B testing, and low and high-fidelity prototyping phases.
+      `,
     },
   };
   
