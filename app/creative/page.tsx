@@ -74,7 +74,7 @@ export default function Creative() {
               height={600}
               className={styles.image} 
             />
-            <div className={styles.caption}>My social media work - drawing + posting TRUE student advisors</div>
+            <div className={styles.caption}>My social media work on the @trueatbrown Instagram page - designing features of TRUE student advisors</div>
             </div>
 
             <div className={styles.imageContainer}>
