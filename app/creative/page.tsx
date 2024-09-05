@@ -43,7 +43,7 @@ export default function Creative() {
 
         <p><em>Some of my other experiences include:</em></p>
         <p>Social media/graphic design work for Brown&apos;s TRUE (Transfer and Resumed Undergraduate Education) program</p>
-        <div className={styles.imageContainer}>
+        <div className={styles.imageRow}>
   <Image 
     src={`/images/true.png`} 
     alt="Image" 

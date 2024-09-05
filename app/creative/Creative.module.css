@@ -60,11 +60,10 @@
     line-height: 1.8;  
   }
  
-  .imageContainer {
+  .imageRow {
     display: flex;
-    justify-content: center;
-    padding: 20px; /* Add padding around the image */
-    margin-bottom: 20px;
+    gap: 20px; /* Space between images, adjust as needed */
+    overflow-x: auto; /* Optional: Adds horizontal scroll if images overflow */
   }
   
   .image {

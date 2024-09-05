@@ -135,7 +135,6 @@ export default function Home() {
 
 
         <div className={styles.imageContainer}>
-          <Link href="/projects/microplasticdetection">
             <Image 
               src="/images/card.png"  
               alt="Twenty Four"
@@ -147,11 +146,10 @@ export default function Home() {
             <div className={styles.caption}>Twenty Four</div>
             <div className={styles.descriptor2}>reimagining a traditional Chinese card game </div>
             <div className={styles.descriptor}>PERSONAL PROJECT | IOS MOBILE APPLICATION | SWIFT </div>
-          </Link>
         </div>
 
         <div className={styles.imageContainer}>
-          <Link href="/projects/evolution">
+          <Link href="/ipgather">
             <Image 
               src="/images/gather.png"  
               alt="Gather"
