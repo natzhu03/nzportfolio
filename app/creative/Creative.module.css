@@ -4,7 +4,7 @@
 .pageContainer {
   padding: 20px;
   padding-top: 70px;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto; /* Remove default margins */
   color: #333;
   background-color: #fff; /* Background color for the content area */
@@ -64,6 +64,16 @@
     display: flex;
     gap: 20px; /* Space between images, adjust as needed */
     overflow-x: auto; /* Optional: Adds horizontal scroll if images overflow */
+  }
+
+
+  .imageContainer {
+    position: relative;
+    margin-right: 50px; /* Space between images */
+    flex: 0 0 auto; /* Prevents the image container from shrinking */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
   }
   
   .image {

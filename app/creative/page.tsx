@@ -8,7 +8,9 @@ export default function Creative() {
   return (
     <ProjectLayout>
       <div className={styles.pageContainer}>
-        <h3>Creative</h3>
+        <h1 className={styles.heading}>check out some of my creative design work!</h1>
+
+        <h1 className={styles.h1}>PROJECTS</h1>
         <div className={homeStyles.scrollContainer}>
           <div className={homeStyles.imageContainer}>
             <Link href="/projects/furniture">
@@ -43,30 +45,46 @@ export default function Creative() {
           </div>
         </div>
 
+        <h1 className={styles.h1}>MISC</h1>
         <p><em>Some of my other experiences include:</em></p>
-        <p>Social media/graphic design work for Brown&apos;s TRUE (Transfer and Resumed Undergraduate Education) program</p>
+        <p><b>Social media/graphic design work for Brown&apos;s TRUE (Transfer and Resumed Undergraduate Education) program</b></p>
+        <p>As the TRUE Communications Advisor, I was in charge of all pre-matriculation promotional/preparational material and communication for incoming Brown transfer students.</p>
+
         <div className={styles.imageRow}>
-  <Image 
-    src={`/images/true.png`} 
-    alt="Image" 
-    width={600} 
-    height={400}
-    className={styles.image} 
-  />
-  <Image 
-    src={`/images/true2.png`} 
-    alt="Image" 
-    width={450} 
-    height={400}
-    className={styles.image} 
-  />
-  <Image 
-    src={`/images/true3.png`} 
-    alt="Image" 
-    width={500} 
-    height={400}
-    className={styles.image} 
-  />
+
+        <div className={styles.imageContainer}>
+            <Image 
+              src={`/images/true.png`} 
+              alt="Image" 
+              width={650} 
+              height={400}
+              className={styles.image} 
+            />
+            <div className={styles.caption}>My design for the TRUE orientation handbook & merchandise!</div>
+        </div>
+
+        <div className={styles.imageContainer}>
+            <Image 
+              src={`/images/true2.png`} 
+              alt="Image" 
+              width={480} 
+              height={400}
+              className={styles.image} 
+            />
+            <div className={styles.caption}>My social media work - drawing + posting TRUE student advisors</div>
+            </div>
+
+            <div className={styles.imageContainer}>
+            <Image 
+              src={`/images/true3.png`} 
+              alt="Image" 
+              width={500} 
+              height={400}
+              className={styles.image} 
+            />
+            <div className={styles.caption}>Some more promotional content for the TRUE Instagram page</div>
+        </div>
+            
 </div>
 
     <p>Official blog website for Fall 2023 study abroad program</p>

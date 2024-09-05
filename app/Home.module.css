@@ -48,6 +48,16 @@
     text-align: center;
   }
 
+  .bottomCaption {
+    position: absolute;
+    top: 100%; 
+    left: 50%;  
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
   .descriptor {
     position: absolute;
     top: 60%; 
