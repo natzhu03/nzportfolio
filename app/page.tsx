@@ -149,8 +149,9 @@ export default function Home() {
         </div>
 
         <div className={styles.imageContainer}>
-          <Link href="/projects/horse">
-            <Image 
+
+        <a href="https://natzhu03.github.io/biometric.html" style={{ color: 'blue', textDecoration: 'underline' }} target="_blank" rel="noopener noreferrer" >
+        <Image 
               src="/images/gather.png"  
               alt="Gather"
               width={550}  
@@ -162,7 +163,7 @@ export default function Home() {
             <div className={styles.descriptor2}>A web app to reunite old friends</div>
             <div className={styles.descriptor}>HACK@BROWN PROJECT | WEB APPLICATION | REACT/SQL/TWILIO </div>
 
-          </Link>
+        </a>
         </div>
       </div>
 
