@@ -84,13 +84,23 @@ During the final project presentation, I was pleased to see the positive reactio
     },
     biometricapp: {
       image: 'biometric.png',
-      title: 'AI Vision Lab',
-      subheading: 'Details about the AI Vision Lab...',
-      role: 'Lead Research Intern',
+      title: 'Biometric Iris Identification',
+      subheading: 'Developing high quality biometric authentication through an android application for iris capture and recording.',
+      role: 'Research Intern',
       duration: 'May 2023 - Aug 2023',
-      team: ['Dr. Masudul Imtiaz - mentor'],
-      disciplines: ['Android Application'],
-      technologies: ['Java'],
+      team: ['Dr. Masudul Imtiaz - PI', 'Naveenkumar Venkataswamy - mentor & project lead'],
+      disciplines: ['Android Development', 'Computer Vision', 'Front-End Design'],
+      technologies: ['Java', 'HTML/CSS', 'OpenCV library', 'Android Studio & Android SDK'],
+      introduction: `
+      I interned at Clarkson University's AI Vision Lab (AVHBAC) to further their work on developing biometric sensors, biometric data acquisition systems, and biometric testing methodologies. One particular goal in this area is to achieve high quality image capture of iris data, which would result in achieving an optimal biometric authentication system.
+
+      This project aimed to develop a mobile camera-based Android application to perform accurate image capture and storage of irises for users to utilize biometric identification. I decided to improve the performance and usability of this Android application and help develop a new quality assessment feature.
+      `,
+      problem:  `
+      This Android Application was developed by Naveenkumar Venkataswamy and currently detected and captured user irises. However, a few key features were still yet to be implemented - particularly user feedback on image quality. This meant that while iris images could be captured, blurry images were not filtered out or prevented.
+
+      To address this issue, I helped to implement an image blurriness check with the OpenCV library, which applied the Laplacian method. I also worked on optimizing the app's performance, by reworking the Java codebase to best implement the process of image capture, rotation, analysis, and storage. In addition, I helped move time-consuming operations to background threads and reduced app resource consumption. 
+       `, 
     },
     compbio: {
       image: 'evolution.png',

@@ -13,7 +13,7 @@ export default function Home() {
         <span style={{ fontSize: '30px', marginLeft: '70px'  }}> 👋 Hi there, I&apos;m</span> <span style={{ fontSize: '40px' }}>Natalie Zhu</span>.
       </p>
 
-      <p style={{ fontSize: '20px', marginLeft: '260px' }}>a software developer</p>
+      <p style={{ fontSize: '20px', marginLeft: '260px' }}>an aspiring software engineer</p>
 
       <p>
         <span style={{ fontSize: '17px', marginLeft: '260px'  }}>with a background in</span> <span style={{ fontSize: '26px' }}>mobile application development, </span>
@@ -98,22 +98,6 @@ export default function Home() {
 
 
       <div className={styles.scrollContainer}>
-
-      <div className={styles.imageContainer}>
-          <Link href="/projects/furniture">
-            <Image 
-              src="/images/furniture.png"  
-              alt="Social Furniture"
-              width={550}  
-              height={300} 
-              className={styles.image}
-            />
-            <div className={styles.date}>Spring 2024</div>
-            <div className={styles.caption}>Social Furniture at Brown</div>
-            <div className={styles.descriptor2}>creating interactions between strangers </div>
-            <div className={styles.descriptor}>FURNITURE DESIGN | 3D MODELING | DESIGN ENGINEERING </div>
-          </Link>
-        </div>
 
         <div className={styles.imageContainer}>
           <Link href="/projects/horse">
